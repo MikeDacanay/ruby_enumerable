@@ -1,6 +1,8 @@
 module MyEnumerable
   def my_each
-    	puts self
+  	for i in 0...self.length
+    	yield(self[i])
+    end
   end
 end
 class Array
